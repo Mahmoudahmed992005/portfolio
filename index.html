@@ -3,130 +3,570 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahmoud Ahmed — Frontend Web Developer</title>
+    <title>Mahmoud Ahmed — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Mahmoud Ahmed — Frontend Developer building fast, accessible, and refined web experiences with React, Next.js and TypeScript."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="mesh">
-      <div class="blob blob1"></div>
-      <div class="blob blob2"></div>
-      <div class="blob blob3"></div>
-    </div>
-    <div class="noise"></div>
 
-    <nav>
+  <body>
+    <nav id="mainNav">
       <div class="inner">
-        <div class="logo">Mahmoud<span class="dot">.</span>dev</div>
+        <a href="#home" class="logo">Mahmoud Ahmed</a>
+
         <ul id="navList">
+          <li><a href="#work">Work</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+
+        <a href="#contact" class="btn btn-primary nav-cta">Get In Touch</a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
           ☰
         </button>
       </div>
     </nav>
 
-    <section class="hero wrap" id="home">
-      <div class="reveal in">
-        <span class="eyebrow">Frontend Web Developer</span>
-        <h1>
-          Crafting interfaces that feel
-          <span class="grad-text">fast, fluid</span> and intentional.
-        </h1>
-        <p class="lede">
-          I'm Mahmoud Ahmed, a Computer Science student and frontend developer
-          from Giza, Egypt, focused on React, Next.js, and TypeScript — turning
-          designs into responsive, production-ready products.
-        </p>
-        <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-          <a
-            href="./Mahmoud_Ahmed_CV.pdf"
-            class="btn btn-ghost"
-            download="Mahmoud_Ahmed_CV.pdf"
-            >Download CV</a
-          >
-        </div>
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true">
+        <span class="g1"></span>
+        <span class="g2"></span>
       </div>
 
-      <div class="hero-card glass reveal in">
-        <div class="avatar-row">
-          <div class="avatar-ring">MA</div>
-          <div>
-            <div class="name">Mahmoud Ahmed</div>
-            <div class="role">Frontend Web Developer · Giza, EG</div>
-          </div>
+      <div class="wrap hero-inner">
+        <span class="eyebrow reveal in">Frontend Developer</span>
+
+        <h1 class="reveal in">
+          Building thoughtful<br />
+          digital <em>experiences.</em>
+        </h1>
+
+        <p class="lede reveal in">
+          I'm a Computer Science student and frontend developer from Giza,
+          Egypt. I design and develop fast, accessible, and refined web
+          experiences — with a strong focus on detail, using React, Next.js, and
+          TypeScript.
+        </p>
+
+        <div class="hero-ctas reveal in">
+          <a href="#work" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+
+          <a
+            href="./Mahmoud_Ahmed_CV.pdf"
+            class="btn-text"
+            download="Mahmoud_Ahmed_CV.pdf"
+          >
+            Download CV ↓
+          </a>
         </div>
-        <div class="stack-pill-row">
-          <span class="pill">React</span>
-          <span class="pill">Next.js</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">Tailwind</span>
-        </div>
-        <div class="divider"></div>
-        <div class="metric-row">
-          <div class="metric">
-            <div class="n">6+</div>
-            <div class="l">Projects</div>
+
+        <div class="hero-meta reveal in">
+          <div class="item">
+            <div class="n">10</div>
+            <div class="l">Projects Shipped</div>
           </div>
-          <div class="metric">
+
+          <div class="item">
+            <div class="n">2025</div>
+            <div class="l">Advanced Frontend Track</div>
+          </div>
+
+          <div class="item">
             <div class="n">2028</div>
-            <div class="l">Graduation</div>
+            <div class="l">B.Sc. Computer Science</div>
           </div>
-          <div class="metric">
-            <div class="n">EN/AR</div>
+
+          <div class="item">
+            <div class="n">EN / AR</div>
             <div class="l">Languages</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <section id="work">
       <div class="wrap">
-        <span class="eyebrow reveal">About</span>
-        <h2 class="section-title reveal">
-          A developer who cares about the details
-        </h2>
-        <p class="section-lede reveal">
-          Comfortable across the frontend stack — from pixel-accurate UI to
-          state management and API integration — with a growing foundation in
-          software engineering fundamentals.
-        </p>
+        <div class="section-head">
+          <span class="eyebrow reveal">Selected Work</span>
 
-        <div class="about-grid">
-          <div class="about-card glass reveal">
+          <h2 class="section-title reveal">Projects worth a closer look</h2>
+
+          <p class="section-lede reveal">
+            A mix of real-world builds — from a full e-commerce platform to
+            focused, single-purpose applications and backend systems.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card span-4 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-28 184038.png"
+                alt="Enterprise E-Commerce Web Application"
+              />
+              <span class="status">In Progress</span>
+              <span class="index">01 — Ecommerce</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Enterprise E-Commerce Web Application</h3>
+                <span class="year">2026</span>
+              </div>
+
+              <p>
+                A fully responsive, type-safe e-commerce platform covering
+                product, category, and brand browsing, secure authentication,
+                cart and wishlist management, order handling with cash/online
+                payment, and saved shipping addresses.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">shadcn/ui</span>
+                <span class="tag">Authentication</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-2 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 231947.png"
+                alt="Mverse Social Media Application"
+              />
+
+              <span class="index">02 — Social</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Mverse</h3>
+                <span class="year">2025</span>
+              </div>
+
+              <p>
+                A fully responsive social platform with functional components
+                and hooks, form validation, and live content loading through
+                dynamic API integration.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">React.js</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">API Integration</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mverse-social-media-app.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-3 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235556.png"
+                alt="Clarity Landing Page"
+              />
+
+              <span class="index">03 — Landing</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Clarity</h3>
+                <span class="year">2025</span>
+              </div>
+
+              <p>
+                A digital-solutions landing page with interactive tech-stack
+                tabs, an animated testimonials carousel, an FAQ accordion, and a
+                full contact form.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Bootstrap 5</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/clarity-website/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-3 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235642.png"
+                alt="DJI Mavic 4 Pro"
+              />
+
+              <span class="index">04 — Product</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>DJI Mavic 4 Pro</h3>
+                <span class="year">2025</span>
+              </div>
+
+              <p>
+                A single-page, e-commerce-style product landing page with a
+                feature comparison table, customer reviews, related accessories,
+                and scroll-aware navigation.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/DJI-MAVIC-4-pro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-2 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235701.png"
+                alt="FitCore Gym"
+              />
+
+              <span class="index">05 — Landing</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>FitCore Gym</h3>
+                <span class="year">2025</span>
+              </div>
+
+              <p>
+                A gym landing site with a hero section, feature highlights,
+                member testimonials, live statistics, and a registration form.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">Bootstrap 5</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/GYM-FIT-CORE/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-2 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235744.png"
+                alt="The UX Review"
+              />
+
+              <span class="index">06 — Editorial</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>The UX Review</h3>
+                <span class="year">2025</span>
+              </div>
+
+              <p>
+                A brutalist-leaning editorial site with a categorized article
+                archive, trending sidebar, author profiles, and newsletter CTAs.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/UX-UI-Magazine/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-2 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235826.png"
+                alt="ContactHub Dashboard"
+              />
+
+              <span class="index">07 — Dashboard</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>ContactHub</h3>
+                <span class="year">2024</span>
+              </div>
+
+              <p>
+                An interactive contact-management dashboard with live search,
+                favorites, emergency contacts, dynamic stats, and an add-contact
+                modal.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/CONTACT-HUB-DASHBOARD/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-3 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-22 235849.png"
+                alt="Modaber Finance Dashboard"
+              />
+
+              <span class="index">08 — FinTech</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Modaber</h3>
+                <span class="year">2024</span>
+              </div>
+
+              <p>
+                A personal-finance dashboard covering balances, transactions,
+                budgets, monthly bills, and weekly cash flow in a clean FinTech
+                UI.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://mahmoudahmed992005.github.io/Modaber/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="live-demo"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-3 reveal">
+            <div class="project-visual">
+              <img
+                src="./My-Image/Screenshot 2026-08-28 183942.png"
+                alt="Patient Guardian Sensor Monitoring"
+              />
+
+              <span class="index">09 — Systems</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Patient-Guardian Sensor Monitoring</h3>
+                <span class="year">2024</span>
+              </div>
+
+              <p>
+                Real-time sensor processing to track patient vitals and trigger
+                emergency alerts to guardians.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">C#</span>
+                <span class="tag">Software Architecture</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card span-3 reveal">
+            <div class="project-visual project-visual-no-image">
+              <span class="index">10 — Systems</span>
+            </div>
+
+            <div class="project-body">
+              <div class="top-row">
+                <h3>Cinema Ticket Booking System</h3>
+                <span class="year">2024</span>
+              </div>
+
+              <p>
+                A modular backend application applying clean OOP principles to
+                manage relational ticket reservations.
+              </p>
+
+              <div class="tag-row">
+                <span class="tag">C#</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">OOP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about-grid">
+        <span class="eyebrow reveal">About Me</span>
+
+        <div class="about-copy">
+          <p class="reveal">
+            I build scalable, high-performance, and responsive web applications
+            with React.js, Next.js, TypeScript, and Tailwind CSS — with a strong
+            focus on clean component architecture, state management, and dynamic
+            API integration.
+          </p>
+
+          <p class="reveal">
+            Accessibility and performance aren't an afterthought; they shape how
+            I structure markup and components from the start. Alongside frontend
+            work, I've also built backend logic in C# and SQL Server, which
+            gives me a fuller picture of how a product fits together end to end.
+          </p>
+
+          <div class="tech-list reveal">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Tailwind CSS</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Experience &amp; Education</span>
+
+          <h2 class="section-title reveal">Background</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="when">2025 — 2026</div>
+
+            <h3>Advanced Frontend Web Development Track</h3>
+
             <p>
-              I build scalable, high-performance, and responsive web
-              applications with React.js, Next.js, TypeScript, Tailwind CSS, and
-              Bootstrap — with a strong focus on clean component architecture,
-              state management, and dynamic API integration. Alongside frontend
-              work, I've also built backend logic in C# and SQL Server, giving
-              me a fuller picture of how a product fits together.
+              Route Academy — intensive training in HTML5, CSS3, JavaScript
+              architecture, React / Next.js workflows, and modern UI
+              engineering.
             </p>
           </div>
-          <div class="stat-stack">
-            <div class="stat-card glass reveal">
-              <div class="num grad-text">2025</div>
-              <div class="label">Advanced Frontend Track, Route Academy</div>
+
+          <div class="timeline-item reveal">
+            <div class="when">Expected 2028</div>
+
+            <h3>B.Sc. Computer Science / Information Technology</h3>
+
+            <p>Faculty of Computers and Information, Luxor University.</p>
+          </div>
+        </div>
+
+        <div class="lang-row">
+          <div class="lang-item reveal">
+            <div class="lg-label">
+              <span>Arabic</span>
+              <span class="pct">Native</span>
             </div>
-            <div class="stat-card glass reveal">
-              <div class="num grad-text">2028</div>
-              <div class="label">Expected B.Sc. Computer Science</div>
+
+            <div class="lang-track">
+              <div class="lang-fill" style="width: 100%"></div>
             </div>
-            <div class="stat-card glass reveal">
-              <div class="num grad-text">6+</div>
-              <div class="label">Frontend &amp; backend projects shipped</div>
+          </div>
+
+          <div class="lang-item reveal">
+            <div class="lg-label">
+              <span>English</span>
+              <span class="pct">Advanced</span>
+            </div>
+
+            <div class="lang-track">
+              <div class="lang-fill" style="width: 85%"></div>
             </div>
           </div>
         </div>
@@ -135,344 +575,63 @@
 
     <section id="skills">
       <div class="wrap">
-        <span class="eyebrow reveal">Skills</span>
-        <h2 class="section-title reveal">Toolkit</h2>
-        <p class="section-lede reveal">
-          The languages, frameworks, and tools I reach for most.
-        </p>
+        <div class="section-head">
+          <span class="eyebrow reveal">Skills</span>
 
-        <div class="skills-grid">
-          <div class="skill-card glass reveal">
-            <div class="cat">Frameworks</div>
-            <ul>
-              <li>React.js</li>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>JavaScript (ES6+)</li>
-            </ul>
-          </div>
-          <div class="skill-card glass reveal">
-            <div class="cat">Styling</div>
-            <ul>
-              <li>Tailwind CSS</li>
-              <li>Bootstrap</li>
-              <li>Responsive Design</li>
-            </ul>
-          </div>
-          <div class="skill-card glass reveal">
-            <div class="cat">Core</div>
-            <ul>
-              <li>HTML5 &amp; CSS3</li>
-              <li>OOP</li>
-              <li>REST APIs</li>
-              <li>Data Structures</li>
-            </ul>
-          </div>
-          <div class="skill-card glass reveal">
-            <div class="cat">Tools</div>
-            <ul>
-              <li>Git</li>
-              <li>C#</li>
-              <li>SQL Server</li>
-              <li>Linux</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="wrap">
-        <span class="eyebrow reveal">Featured Projects</span>
-        <h2 class="section-title reveal">Selected work</h2>
-        <p class="section-lede reveal">
-          A mix of real-world builds — from full e-commerce platforms to
-          focused, single-purpose apps.
-        </p>
-
-        <div class="project-grid">
-          <div class="project-card glass reveal">
-            <div class="project-card-top">
-              <div class="project-index">01</div>
-              <span class="status-badge">In Progress</span>
-            </div>
-            <h3>Enterprise E-Commerce Web Application</h3>
-            <p>
-              A fully responsive, type-safe e-commerce platform built with
-              Next.js, TypeScript, Tailwind CSS, and shadcn/ui — covering
-              product, category, and brand browsing, secure authentication, cart
-              and wishlist management, order handling with cash/online payment,
-              and saved shipping addresses. Currently under active development.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Next.js</span><span class="tag">TypeScript</span
-              ><span class="tag">Tailwind CSS</span
-              ><span class="tag">shadcn/ui</span
-              ><span class="tag">Authentication</span
-              ><span class="tag">Cart &amp; Wishlist</span
-              ><span class="tag">Orders</span>
-            </div>
-          </div>
-
-          <div class="project-card glass reveal">
-            <div class="project-index">02</div>
-            <h3>Mverse — Social Media Web Application</h3>
-            <p>
-              A fully responsive social platform built with React.js and
-              Tailwind CSS, featuring functional components and hooks, form
-              validation, and live content loading through dynamic API
-              integration.
-            </p>
-            <div class="tag-row">
-              <span class="tag">React.js</span
-              ><span class="tag">Tailwind CSS</span
-              ><span class="tag">JavaScript</span
-              ><span class="tag">API Integration</span
-              ><span class="tag">Form Validation</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mverse-social-media-app.vercel.app/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
+          <h2 class="section-title reveal">Where I add the most value</h2>
         </div>
 
-        <div class="other-projects">
-          <div class="project-card glass reveal">
-            <div class="project-index">03</div>
-            <h3>Clarity — Digital Solutions Landing Page</h3>
-            <p>
-              A single-page landing site for a digital solutions company,
-              featuring interactive tech-stack tabs, an animated testimonials
-              carousel, an FAQ accordion, and a full contact form.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span><span class="tag">CSS3</span
-              ><span class="tag">Bootstrap 5</span
-              ><span class="tag">JavaScript</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/clarity-website/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">04</div>
-            <h3>DJI Mavic 4 Pro — Product Landing Page</h3>
-            <p>
-              A single-page, e-commerce-style product landing page with a
-              feature comparison table, customer reviews, related accessories,
-              and scroll-aware navigation.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span><span class="tag">CSS3</span
-              ><span class="tag">Bootstrap</span
-              ><span class="tag">JavaScript</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/DJI-MAVIC-4-pro/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">05</div>
-            <h3>FitCore Gym — Gym Landing Page</h3>
-            <p>
-              A single-page gym landing site with a hero section, feature
-              highlights, member testimonials, live statistics, and a
-              registration form.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span><span class="tag">CSS3</span
-              ><span class="tag">Bootstrap 5</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/GYM-FIT-CORE/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">06</div>
-            <h3>The UX Review — UX Magazine Website</h3>
-            <p>
-              A single-page editorial site with a Brutalist design system,
-              categorized article archive, trending sidebar, author profiles,
-              and newsletter CTAs.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span><span class="tag">CSS3</span
-              ><span class="tag">Bootstrap</span
-              ><span class="tag">JavaScript</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/UX-UI-Magazine/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">07</div>
-            <h3>ContactHub — Smart Contact Manager (Web App)</h3>
-            <p>
-              An interactive contact management dashboard — not a landing page —
-              with live search, favorites, emergency contacts, dynamic stats,
-              and an add-contact modal driven by JavaScript.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span
-              ><span class="tag">Bootstrap 5.3</span
-              ><span class="tag">JavaScript</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/CONTACT-HUB-DASHBOARD/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">08</div>
-            <h3>Modaber — Smart Money Management (Web App)</h3>
-            <p>
-              An interactive personal finance dashboard — not a landing page —
-              covering balances, transactions, budgets, monthly bills, and
-              weekly cash flow in a clean FinTech UI.
-            </p>
-            <div class="tag-row">
-              <span class="tag">HTML5</span><span class="tag">CSS3</span
-              ><span class="tag">Bootstrap</span
-              ><span class="tag">JavaScript</span>
-            </div>
-            <a
-              class="live-link"
-              href="https://mahmoudahmed992005.github.io/Modaber/"
-              target="_blank"
-              rel="noopener"
-              >View Live <span class="arrow">↗</span></a
-            >
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">09</div>
-            <h3>Smart Patient-Guardian Sensor Monitoring System</h3>
-            <p>
-              Real-time sensor processing to track patient vitals and trigger
-              emergency alerts to guardians.
-            </p>
-            <div class="tag-row">
-              <span class="tag">C#</span
-              ><span class="tag">Software Architecture</span>
-            </div>
-          </div>
-          <div class="project-card glass reveal">
-            <div class="project-index">10</div>
-            <h3>Cinema Ticket Booking System</h3>
-            <p>
-              A modular backend application applying clean OOP principles to
-              manage relational ticket reservations.
-            </p>
-            <div class="tag-row">
-              <span class="tag">C#</span><span class="tag">SQL Server</span
-              ><span class="tag">OOP</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <div class="wrap">
-        <span class="eyebrow reveal">Education</span>
-        <h2 class="section-title reveal">Background</h2>
-
-        <div class="timeline">
-          <div class="timeline-item glass reveal">
-            <div class="when">2025 — 2026</div>
-            <div>
-              <h3>Advanced Frontend Web Development Track</h3>
-              <p>
-                Route Academy — Intensive training in HTML5, CSS3, JavaScript
-                architecture, React/Next.js workflows, and modern UI
-                engineering.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item glass reveal">
-            <div class="when">Expected 2028</div>
-            <div>
-              <h3>B.Sc. Computer Science / Information Technology</h3>
-              <p>Faculty of Computers and Information, Luxor University.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="lang-row">
-          <div class="lang-bar-wrap glass reveal">
-            <div class="top">
-              <span>Arabic</span><span class="pct">Native</span>
-            </div>
-            <div class="lang-bar-track">
-              <div class="lang-bar-fill" style="width: 100%"></div>
-            </div>
-          </div>
-          <div class="lang-bar-wrap glass reveal">
-            <div class="top">
-              <span>English</span><span class="pct">Advanced</span>
-            </div>
-            <div class="lang-bar-track">
-              <div class="lang-bar-fill" style="width: 85%"></div>
-            </div>
-          </div>
+        <div class="skills-wrap">
+          <span class="skill-tag reveal">Frontend Development</span>
+          <span class="skill-tag reveal">UI Engineering</span>
+          <span class="skill-tag reveal">Responsive Design</span>
+          <span class="skill-tag reveal">Accessibility</span>
+          <span class="skill-tag reveal">Performance</span>
+          <span class="skill-tag reveal">API Integration</span>
+          <span class="skill-tag reveal">Design Systems</span>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap">
-        <div class="contact-card glass reveal">
-          <h2>Let's build something <span class="grad-text">great</span>.</h2>
-          <p>
-            Open to frontend roles, internships, and freelance projects. Reach
-            out anytime.
-          </p>
+        <div class="contact reveal">
+          <div class="contact-glow" aria-hidden="true"></div>
+
+          <span class="eyebrow">Contact</span>
+
+          <h2>
+            Have a project in mind?<br />
+            <span class="line-2">Let's build something meaningful.</span>
+          </h2>
+
           <div class="contact-links">
             <a
               class="contact-link"
-              href="mailto:turbo992005m@gmail.com?subject=Let's%20talk%20about%20a%20project&body=Hi%20Mahmoud%2C%0A%0A"
-              >✉ turbo992005m@gmail.com</a
+              href="mailto:turbo992005m@gmail.com?subject=Let's%20talk%20about%20a%20project"
             >
-            <a class="contact-link" href="tel:+201143778074">☎ 01143778074</a>
-            <a
-              class="contact-link"
-              href="https://www.linkedin.com/in/mahmooud-ahmed-992005m"
-              target="_blank"
-              rel="noopener"
-              >in LinkedIn: Mahmoud Ahmed</a
-            >
+              ✉ turbo992005m@gmail.com
+            </a>
+
+            <a class="contact-link" href="tel:01143778074"> ☎ 01143778074 </a>
+
             <a
               class="contact-link"
               href="https://github.com/Mahmoudahmed992005"
               target="_blank"
-              rel="noopener"
-              >⌥ GitHub: Mahmoudahmed992005</a
+              rel="noopener noreferrer"
             >
-            <span class="contact-link" style="cursor: default"
-              >◎ Giza, Egypt</span
+              ⌥ GitHub
+            </a>
+
+            <a
+              class="contact-link"
+              href="https://www.linkedin.com/in/mahmooud-ahmed-992005m"
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
@@ -480,23 +639,32 @@
 
     <footer>
       <div class="wrap footer-inner">
-        <span
-          >© 2026 Mahmoud Ahmed Abd-Algewad — built with HTML, CSS &amp;
-          JS</span
-        >
+        <div>
+          <div class="f-name">Mahmoud Ahmed</div>
+          <div class="f-role">Frontend Developer · © 2026</div>
+          <a href="tel:01143778074"> <div class="f-phone"></div></a>
+        </div>
+
         <div class="footer-socials">
           <a
             href="https://github.com/Mahmoudahmed992005"
             target="_blank"
-            rel="noopener"
-            >GitHub</a
+            rel="noopener noreferrer"
           >
+            GitHub
+          </a>
+
           <a
             href="https://www.linkedin.com/in/mahmooud-ahmed-992005m"
             target="_blank"
-            rel="noopener"
-            >LinkedIn</a
+            rel="noopener noreferrer"
           >
+            LinkedIn
+          </a>
+
+          <a href="mailto:turbo992005m@gmail.com"> Email </a>
+
+          <a href="tel:01143778074"> Phone </a>
         </div>
       </div>
     </footer>
